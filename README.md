@@ -20,8 +20,8 @@ System.getProperties().getProperty("browser")
         ...
         ..
 
-asfsfdasdfdsa
-Add Java Maven surefire plugin to your pom.xml
+
+**Add Java Maven surefire plugin to your pom.xml**
 
 
     <project>
