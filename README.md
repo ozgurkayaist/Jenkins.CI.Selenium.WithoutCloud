@@ -2,6 +2,7 @@ How to run Selenium tests without cloud solution?
 -------------------------------------------------
 
 
+
 **Read key values from build options. You should read browser type from this option**
 System.getProperties().getProperty("browser")
 
@@ -73,6 +74,9 @@ System.getProperties().getProperty("browser")
 -Dbrowser=CHROME
 -Dbrowser=IE
 -Dbrowser=SAFARI
+
+**There are different test running models. You should read the following article.** 
+https://saucelabs.com/resources/articles/selenium-jenkins-how-to-do-it-yourself-and-the-sauce-labs-advantage
 
 
 > Written with [StackEdit](https://stackedit.io/).
