@@ -2,7 +2,7 @@ How to run Selenium tests without cloud solution?
 -------------------------------------------------
 
 
-**Read key values from build options:**
+**Read key values from build options. You should read browser type from this option**
 System.getProperties().getProperty("browser")
 
 **Example Selenium webdriver code block**
@@ -21,7 +21,7 @@ System.getProperties().getProperty("browser")
         ..
 
 
-**Add Java Maven surefire plugin to your pom.xml**
+**Add Java Maven surefire plugin to your pom.xml for parallel test execution**
 
 
     <project>
@@ -64,10 +64,10 @@ System.getProperties().getProperty("browser")
     
     </project>
 
-**Example terminal command for CI like Jenkins:**
+**Example terminal command to execute for CI integration like Jenkins:**
  "maven clean test -Dbrowser=FIREFOX"
 
-**Example IntelliJ Usage for debugging and developing.**
+**Example IntelliJ Usage for debugging and developing**
  Run-> Edit Configurations -> Defaults -> Junit -> VM options
 -Dbrowser=FIREFOX
 -Dbrowser=CHROME
